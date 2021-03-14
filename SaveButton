@@ -1,0 +1,8 @@
+            string fo = @"\textsaves";
+            string fi = @"\text.txt";
+            string p = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string pfo = p + fo;
+            string pfi = pfo + fi;
+            string text = Convert.ToString(body.Text);
+            File.AppendAllText(pfi, " Update: " + text);
+//put in click event of a button
