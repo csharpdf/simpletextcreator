@@ -1,0 +1,11 @@
+            string p = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            System.IO.Directory.CreateDirectory(p + @"\textsaves");
+            string fo = @"\textsaves";
+            string fi = @"\text.txt";
+            string pfo = p + fo;
+            string pfi = pfo + fi;
+            if (!File.Exists(pfi))
+            {
+                File.Create(pfi);
+            }
+//adds the folder and file if it isnt already created
